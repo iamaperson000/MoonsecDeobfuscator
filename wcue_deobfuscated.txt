@@ -1,0 +1,381 @@
+-- Disassembled with MoonSec V3 deobfuscator by #tupsutumppu
+function func_6865e90a(...)
+	[Slots: 19, Upvalues: 0, Constants: 85]
+	[   0]	   GetGlobal	|    0 |    0 |    0 |	R0 = game
+	[   1]	        Self	|    0 |    0 |  257 |	R1 = R0; R0 = R0["GetService"]
+	[   2]	       LoadK	|    2 |    2 |    0 |	R2 = "Players"
+	[   3]	        Call	|    0 |    3 |    2 |	R0 = R0(R1, R2)
+	[   4]	   GetGlobal	|    1 |    0 |    0 |	R1 = game
+	[   5]	        Self	|    1 |    1 |  257 |	R2 = R1; R1 = R1["GetService"]
+	[   6]	       LoadK	|    3 |    3 |    0 |	R3 = "Workspace"
+	[   7]	        Call	|    1 |    3 |    2 |	R1 = R1(R2, R3)
+	[   8]	    GetTable	|    2 |    0 |  260 |	R2 = R0["LocalPlayer"]
+	[   9]	   GetGlobal	|    3 |    5 |    0 |	R3 = Instance
+	[  10]	    GetTable	|    3 |    3 |  262 |	R3 = R3["new"]
+	[  11]	       LoadK	|    4 |    7 |    0 |	R4 = "ScreenGui"
+	[  12]	        Call	|    3 |    2 |    2 |	R3 = R3(R4)
+	[  13]	        Self	|    4 |    2 |  264 |	R5 = R2; R4 = R2["WaitForChild"]
+	[  14]	       LoadK	|    6 |    9 |    0 |	R6 = "PlayerGui"
+	[  15]	        Call	|    4 |    3 |    2 |	R4 = R4(R5, R6)
+	[  16]	    SetTable	|    3 |  266 |    4 |	R3["Parent"] = R4
+	[  17]	    SetTable	|    3 |  267 |  268 |	R3["ResetOnSpawn"] = false
+	[  18]	   GetGlobal	|    4 |   13 |    0 |	R4 = Enum
+	[  19]	    GetTable	|    4 |    4 |  270 |	R4 = R4["ZIndexBehavior"]
+	[  20]	    GetTable	|    4 |    4 |  271 |	R4 = R4["Sibling"]
+	[  21]	    SetTable	|    3 |  270 |    4 |	R3["ZIndexBehavior"] = R4
+	[  22]	    SetTable	|    3 |  272 |  273 |	R3["DisplayOrder"] = 999
+	[  23]	   GetGlobal	|    4 |    5 |    0 |	R4 = Instance
+	[  24]	    GetTable	|    4 |    4 |  262 |	R4 = R4["new"]
+	[  25]	       LoadK	|    5 |   18 |    0 |	R5 = "ImageLabel"
+	[  26]	        Call	|    4 |    2 |    2 |	R4 = R4(R5)
+	[  27]	   GetGlobal	|    5 |   19 |    0 |	R5 = UDim2
+	[  28]	    GetTable	|    5 |    5 |  262 |	R5 = R5["new"]
+	[  29]	       LoadK	|    6 |   20 |    0 |	R6 = 0
+	[  30]	       LoadK	|    7 |   21 |    0 |	R7 = 300
+	[  31]	       LoadK	|    8 |   20 |    0 |	R8 = 0
+	[  32]	       LoadK	|    9 |   22 |    0 |	R9 = 180
+	[  33]	        Call	|    5 |    5 |    2 |	R5 = R5(R6, R7, R8, R9)
+	[  34]	    SetTable	|    4 |  279 |    5 |	R4["Size"] = R5
+	[  35]	   GetGlobal	|    5 |   19 |    0 |	R5 = UDim2
+	[  36]	    GetTable	|    5 |    5 |  262 |	R5 = R5["new"]
+	[  37]	       LoadK	|    6 |   24 |    0 |	R6 = 0.7
+	[  38]	       LoadK	|    7 |   25 |    0 |	R7 = -150
+	[  39]	       LoadK	|    8 |   26 |    0 |	R8 = 0.3
+	[  40]	       LoadK	|    9 |   27 |    0 |	R9 = -90
+	[  41]	        Call	|    5 |    5 |    2 |	R5 = R5(R6, R7, R8, R9)
+	[  42]	    SetTable	|    4 |  284 |    5 |	R4["Position"] = R5
+	[  43]	    SetTable	|    4 |  285 |  286 |	R4["BackgroundTransparency"] = 1
+	[  44]	    SetTable	|    4 |  287 |  288 |	R4["Image"] = "rbxassetid://77692682891668"
+	[  45]	    SetTable	|    4 |  266 |    3 |	R4["Parent"] = R3
+	[  46]	    SetTable	|    4 |  289 |  290 |	R4["ZIndex"] = 1000
+	[  47]	   GetGlobal	|    5 |    5 |    0 |	R5 = Instance
+	[  48]	    GetTable	|    5 |    5 |  262 |	R5 = R5["new"]
+	[  49]	       LoadK	|    6 |   35 |    0 |	R6 = "UICorner"
+	[  50]	        Call	|    5 |    2 |    2 |	R5 = R5(R6)
+	[  51]	   GetGlobal	|    6 |   36 |    0 |	R6 = UDim
+	[  52]	    GetTable	|    6 |    6 |  262 |	R6 = R6["new"]
+	[  53]	       LoadK	|    7 |   20 |    0 |	R7 = 0
+	[  54]	       LoadK	|    8 |   37 |    0 |	R8 = 25
+	[  55]	        Call	|    6 |    3 |    2 |	R6 = R6(R7, R8)
+	[  56]	    SetTable	|    5 |  294 |    6 |	R5["CornerRadius"] = R6
+	[  57]	    SetTable	|    5 |  266 |    4 |	R5["Parent"] = R4
+	[  58]	    SetTable	|    4 |  295 |  296 |	R4["Active"] = true
+	[  59]	    SetTable	|    4 |  297 |  296 |	R4["Draggable"] = true
+	[  60]	   GetGlobal	|    6 |    5 |    0 |	R6 = Instance
+	[  61]	    GetTable	|    6 |    6 |  262 |	R6 = R6["new"]
+	[  62]	       LoadK	|    7 |   42 |    0 |	R7 = "TextLabel"
+	[  63]	        Call	|    6 |    2 |    2 |	R6 = R6(R7)
+	[  64]	   GetGlobal	|    7 |   19 |    0 |	R7 = UDim2
+	[  65]	    GetTable	|    7 |    7 |  262 |	R7 = R7["new"]
+	[  66]	       LoadK	|    8 |   20 |    0 |	R8 = 0
+	[  67]	       LoadK	|    9 |   43 |    0 |	R9 = 220
+	[  68]	       LoadK	|   10 |   20 |    0 |	R10 = 0
+	[  69]	       LoadK	|   11 |   44 |    0 |	R11 = 30
+	[  70]	        Call	|    7 |    5 |    2 |	R7 = R7(R8, R9, R10, R11)
+	[  71]	    SetTable	|    6 |  279 |    7 |	R6["Size"] = R7
+	[  72]	   GetGlobal	|    7 |   19 |    0 |	R7 = UDim2
+	[  73]	    GetTable	|    7 |    7 |  262 |	R7 = R7["new"]
+	[  74]	       LoadK	|    8 |   45 |    0 |	R8 = 0.5
+	[  75]	       LoadK	|    9 |   46 |    0 |	R9 = -110
+	[  76]	       LoadK	|   10 |   20 |    0 |	R10 = 0
+	[  77]	       LoadK	|   11 |   47 |    0 |	R11 = 15
+	[  78]	        Call	|    7 |    5 |    2 |	R7 = R7(R8, R9, R10, R11)
+	[  79]	    SetTable	|    6 |  284 |    7 |	R6["Position"] = R7
+	[  80]	    SetTable	|    6 |  304 |  305 |	R6["Text"] = "WCUE FUCKER! 1.0"
+	[  81]	   GetGlobal	|    7 |   50 |    0 |	R7 = Color3
+	[  82]	    GetTable	|    7 |    7 |  262 |	R7 = R7["new"]
+	[  83]	       LoadK	|    8 |   20 |    0 |	R8 = 0
+	[  84]	       LoadK	|    9 |   20 |    0 |	R9 = 0
+	[  85]	       LoadK	|   10 |   20 |    0 |	R10 = 0
+	[  86]	        Call	|    7 |    4 |    2 |	R7 = R7(R8, R9, R10)
+	[  87]	    SetTable	|    6 |  307 |    7 |	R6["TextColor3"] = R7
+	[  88]	    SetTable	|    6 |  285 |  308 |	R6["BackgroundTransparency"] = 0.2
+	[  89]	   GetGlobal	|    7 |   50 |    0 |	R7 = Color3
+	[  90]	    GetTable	|    7 |    7 |  262 |	R7 = R7["new"]
+	[  91]	       LoadK	|    8 |   30 |    0 |	R8 = 1
+	[  92]	       LoadK	|    9 |   30 |    0 |	R9 = 1
+	[  93]	       LoadK	|   10 |   30 |    0 |	R10 = 1
+	[  94]	        Call	|    7 |    4 |    2 |	R7 = R7(R8, R9, R10)
+	[  95]	    SetTable	|    6 |  309 |    7 |	R6["BackgroundColor3"] = R7
+	[  96]	    SetTable	|    6 |  310 |  296 |	R6["TextScaled"] = true
+	[  97]	   GetGlobal	|    7 |   13 |    0 |	R7 = Enum
+	[  98]	    GetTable	|    7 |    7 |  311 |	R7 = R7["Font"]
+	[  99]	    GetTable	|    7 |    7 |  312 |	R7 = R7["SourceSans"]
+	[ 100]	    SetTable	|    6 |  311 |    7 |	R6["Font"] = R7
+	[ 101]	    SetTable	|    6 |  313 |  276 |	R6["BorderSizePixel"] = 0
+	[ 102]	    SetTable	|    6 |  266 |    4 |	R6["Parent"] = R4
+	[ 103]	   GetGlobal	|    7 |    5 |    0 |	R7 = Instance
+	[ 104]	    GetTable	|    7 |    7 |  262 |	R7 = R7["new"]
+	[ 105]	       LoadK	|    8 |   35 |    0 |	R8 = "UICorner"
+	[ 106]	        Call	|    7 |    2 |    2 |	R7 = R7(R8)
+	[ 107]	   GetGlobal	|    8 |   36 |    0 |	R8 = UDim
+	[ 108]	    GetTable	|    8 |    8 |  262 |	R8 = R8["new"]
+	[ 109]	       LoadK	|    9 |   20 |    0 |	R9 = 0
+	[ 110]	       LoadK	|   10 |   47 |    0 |	R10 = 15
+	[ 111]	        Call	|    8 |    3 |    2 |	R8 = R8(R9, R10)
+	[ 112]	    SetTable	|    7 |  294 |    8 |	R7["CornerRadius"] = R8
+	[ 113]	    SetTable	|    7 |  266 |    6 |	R7["Parent"] = R6
+	[ 114]	   GetGlobal	|    8 |    5 |    0 |	R8 = Instance
+	[ 115]	    GetTable	|    8 |    8 |  262 |	R8 = R8["new"]
+	[ 116]	       LoadK	|    9 |   58 |    0 |	R9 = "TextBox"
+	[ 117]	        Call	|    8 |    2 |    2 |	R8 = R8(R9)
+	[ 118]	   GetGlobal	|    9 |   19 |    0 |	R9 = UDim2
+	[ 119]	    GetTable	|    9 |    9 |  262 |	R9 = R9["new"]
+	[ 120]	       LoadK	|   10 |   20 |    0 |	R10 = 0
+	[ 121]	       LoadK	|   11 |   59 |    0 |	R11 = 280
+	[ 122]	       LoadK	|   12 |   20 |    0 |	R12 = 0
+	[ 123]	       LoadK	|   13 |   60 |    0 |	R13 = 40
+	[ 124]	        Call	|    9 |    5 |    2 |	R9 = R9(R10, R11, R12, R13)
+	[ 125]	    SetTable	|    8 |  279 |    9 |	R8["Size"] = R9
+	[ 126]	   GetGlobal	|    9 |   19 |    0 |	R9 = UDim2
+	[ 127]	    GetTable	|    9 |    9 |  262 |	R9 = R9["new"]
+	[ 128]	       LoadK	|   10 |   20 |    0 |	R10 = 0
+	[ 129]	       LoadK	|   11 |   61 |    0 |	R11 = 10
+	[ 130]	       LoadK	|   12 |   20 |    0 |	R12 = 0
+	[ 131]	       LoadK	|   13 |   62 |    0 |	R13 = 65
+	[ 132]	        Call	|    9 |    5 |    2 |	R9 = R9(R10, R11, R12, R13)
+	[ 133]	    SetTable	|    8 |  284 |    9 |	R8["Position"] = R9
+	[ 134]	    SetTable	|    8 |  319 |  320 |	R8["PlaceholderText"] = "user"
+	[ 135]	    SetTable	|    8 |  304 |  321 |	R8["Text"] = ""
+	[ 136]	   GetGlobal	|    9 |   13 |    0 |	R9 = Enum
+	[ 137]	    GetTable	|    9 |    9 |  311 |	R9 = R9["Font"]
+	[ 138]	    GetTable	|    9 |    9 |  312 |	R9 = R9["SourceSans"]
+	[ 139]	    SetTable	|    8 |  311 |    9 |	R8["Font"] = R9
+	[ 140]	    SetTable	|    8 |  310 |  296 |	R8["TextScaled"] = true
+	[ 141]	    SetTable	|    8 |  285 |  280 |	R8["BackgroundTransparency"] = 0.7
+	[ 142]	   GetGlobal	|    9 |   50 |    0 |	R9 = Color3
+	[ 143]	    GetTable	|    9 |    9 |  262 |	R9 = R9["new"]
+	[ 144]	       LoadK	|   10 |   30 |    0 |	R10 = 1
+	[ 145]	       LoadK	|   11 |   30 |    0 |	R11 = 1
+	[ 146]	       LoadK	|   12 |   30 |    0 |	R12 = 1
+	[ 147]	        Call	|    9 |    4 |    2 |	R9 = R9(R10, R11, R12)
+	[ 148]	    SetTable	|    8 |  309 |    9 |	R8["BackgroundColor3"] = R9
+	[ 149]	   GetGlobal	|    9 |   50 |    0 |	R9 = Color3
+	[ 150]	    GetTable	|    9 |    9 |  262 |	R9 = R9["new"]
+	[ 151]	       LoadK	|   10 |   20 |    0 |	R10 = 0
+	[ 152]	       LoadK	|   11 |   20 |    0 |	R11 = 0
+	[ 153]	       LoadK	|   12 |   20 |    0 |	R12 = 0
+	[ 154]	        Call	|    9 |    4 |    2 |	R9 = R9(R10, R11, R12)
+	[ 155]	    SetTable	|    8 |  307 |    9 |	R8["TextColor3"] = R9
+	[ 156]	    SetTable	|    8 |  313 |  322 |	R8["BorderSizePixel"] = 2
+	[ 157]	   GetGlobal	|    9 |   50 |    0 |	R9 = Color3
+	[ 158]	    GetTable	|    9 |    9 |  262 |	R9 = R9["new"]
+	[ 159]	       LoadK	|   10 |   20 |    0 |	R10 = 0
+	[ 160]	       LoadK	|   11 |   20 |    0 |	R11 = 0
+	[ 161]	       LoadK	|   12 |   20 |    0 |	R12 = 0
+	[ 162]	        Call	|    9 |    4 |    2 |	R9 = R9(R10, R11, R12)
+	[ 163]	    SetTable	|    8 |  323 |    9 |	R8["BorderColor3"] = R9
+	[ 164]	    SetTable	|    8 |  266 |    4 |	R8["Parent"] = R4
+	[ 165]	   GetGlobal	|    9 |    5 |    0 |	R9 = Instance
+	[ 166]	    GetTable	|    9 |    9 |  262 |	R9 = R9["new"]
+	[ 167]	       LoadK	|   10 |   35 |    0 |	R10 = "UICorner"
+	[ 168]	        Call	|    9 |    2 |    2 |	R9 = R9(R10)
+	[ 169]	   GetGlobal	|   10 |   36 |    0 |	R10 = UDim
+	[ 170]	    GetTable	|   10 |   10 |  262 |	R10 = R10["new"]
+	[ 171]	       LoadK	|   11 |   20 |    0 |	R11 = 0
+	[ 172]	       LoadK	|   12 |   47 |    0 |	R12 = 15
+	[ 173]	        Call	|   10 |    3 |    2 |	R10 = R10(R11, R12)
+	[ 174]	    SetTable	|    9 |  294 |   10 |	R9["CornerRadius"] = R10
+	[ 175]	    SetTable	|    9 |  266 |    8 |	R9["Parent"] = R8
+	[ 176]	   GetGlobal	|   10 |    5 |    0 |	R10 = Instance
+	[ 177]	    GetTable	|   10 |   10 |  262 |	R10 = R10["new"]
+	[ 178]	       LoadK	|   11 |   68 |    0 |	R11 = "TextButton"
+	[ 179]	        Call	|   10 |    2 |    2 |	R10 = R10(R11)
+	[ 180]	   GetGlobal	|   11 |   19 |    0 |	R11 = UDim2
+	[ 181]	    GetTable	|   11 |   11 |  262 |	R11 = R11["new"]
+	[ 182]	       LoadK	|   12 |   20 |    0 |	R12 = 0
+	[ 183]	       LoadK	|   13 |   59 |    0 |	R13 = 280
+	[ 184]	       LoadK	|   14 |   20 |    0 |	R14 = 0
+	[ 185]	       LoadK	|   15 |   60 |    0 |	R15 = 40
+	[ 186]	        Call	|   11 |    5 |    2 |	R11 = R11(R12, R13, R14, R15)
+	[ 187]	    SetTable	|   10 |  279 |   11 |	R10["Size"] = R11
+	[ 188]	   GetGlobal	|   11 |   19 |    0 |	R11 = UDim2
+	[ 189]	    GetTable	|   11 |   11 |  262 |	R11 = R11["new"]
+	[ 190]	       LoadK	|   12 |   20 |    0 |	R12 = 0
+	[ 191]	       LoadK	|   13 |   61 |    0 |	R13 = 10
+	[ 192]	       LoadK	|   14 |   20 |    0 |	R14 = 0
+	[ 193]	       LoadK	|   15 |   69 |    0 |	R15 = 115
+	[ 194]	        Call	|   11 |    5 |    2 |	R11 = R11(R12, R13, R14, R15)
+	[ 195]	    SetTable	|   10 |  284 |   11 |	R10["Position"] = R11
+	[ 196]	    SetTable	|   10 |  304 |  326 |	R10["Text"] = "steal"
+	[ 197]	   GetGlobal	|   11 |   13 |    0 |	R11 = Enum
+	[ 198]	    GetTable	|   11 |   11 |  311 |	R11 = R11["Font"]
+	[ 199]	    GetTable	|   11 |   11 |  312 |	R11 = R11["SourceSans"]
+	[ 200]	    SetTable	|   10 |  311 |   11 |	R10["Font"] = R11
+	[ 201]	    SetTable	|   10 |  310 |  296 |	R10["TextScaled"] = true
+	[ 202]	    SetTable	|   10 |  285 |  280 |	R10["BackgroundTransparency"] = 0.7
+	[ 203]	   GetGlobal	|   11 |   50 |    0 |	R11 = Color3
+	[ 204]	    GetTable	|   11 |   11 |  262 |	R11 = R11["new"]
+	[ 205]	       LoadK	|   12 |   71 |    0 |	R12 = 100
+	[ 206]	       LoadK	|   13 |   71 |    0 |	R13 = 100
+	[ 207]	       LoadK	|   14 |   71 |    0 |	R14 = 100
+	[ 208]	        Call	|   11 |    4 |    2 |	R11 = R11(R12, R13, R14)
+	[ 209]	    SetTable	|   10 |  309 |   11 |	R10["BackgroundColor3"] = R11
+	[ 210]	   GetGlobal	|   11 |   50 |    0 |	R11 = Color3
+	[ 211]	    GetTable	|   11 |   11 |  262 |	R11 = R11["new"]
+	[ 212]	       LoadK	|   12 |   20 |    0 |	R12 = 0
+	[ 213]	       LoadK	|   13 |   20 |    0 |	R13 = 0
+	[ 214]	       LoadK	|   14 |   20 |    0 |	R14 = 0
+	[ 215]	        Call	|   11 |    4 |    2 |	R11 = R11(R12, R13, R14)
+	[ 216]	    SetTable	|   10 |  307 |   11 |	R10["TextColor3"] = R11
+	[ 217]	    SetTable	|   10 |  313 |  322 |	R10["BorderSizePixel"] = 2
+	[ 218]	   GetGlobal	|   11 |   50 |    0 |	R11 = Color3
+	[ 219]	    GetTable	|   11 |   11 |  262 |	R11 = R11["new"]
+	[ 220]	       LoadK	|   12 |   20 |    0 |	R12 = 0
+	[ 221]	       LoadK	|   13 |   20 |    0 |	R13 = 0
+	[ 222]	       LoadK	|   14 |   20 |    0 |	R14 = 0
+	[ 223]	        Call	|   11 |    4 |    2 |	R11 = R11(R12, R13, R14)
+	[ 224]	    SetTable	|   10 |  323 |   11 |	R10["BorderColor3"] = R11
+	[ 225]	    SetTable	|   10 |  266 |    4 |	R10["Parent"] = R4
+	[ 226]	   GetGlobal	|   11 |    5 |    0 |	R11 = Instance
+	[ 227]	    GetTable	|   11 |   11 |  262 |	R11 = R11["new"]
+	[ 228]	       LoadK	|   12 |   35 |    0 |	R12 = "UICorner"
+	[ 229]	        Call	|   11 |    2 |    2 |	R11 = R11(R12)
+	[ 230]	   GetGlobal	|   12 |   36 |    0 |	R12 = UDim
+	[ 231]	    GetTable	|   12 |   12 |  262 |	R12 = R12["new"]
+	[ 232]	       LoadK	|   13 |   20 |    0 |	R13 = 0
+	[ 233]	       LoadK	|   14 |   47 |    0 |	R14 = 15
+	[ 234]	        Call	|   12 |    3 |    2 |	R12 = R12(R13, R14)
+	[ 235]	    SetTable	|   11 |  294 |   12 |	R11["CornerRadius"] = R12
+	[ 236]	    SetTable	|   11 |  266 |   10 |	R11["Parent"] = R10
+	[ 237]	     Closure	|   12 |    1 |    0 |	R12 = func_16c5e0b7
+	[ 238]	        Move	|   13 |   12 |    0 |	R13 = R12
+	[ 239]	        Move	|   14 |    8 |    0 |	R14 = R8
+	[ 240]	        Call	|   13 |    2 |    1 |	R13(R14)
+	[ 241]	        Move	|   13 |   12 |    0 |	R13 = R12
+	[ 242]	        Move	|   14 |   10 |    0 |	R14 = R10
+	[ 243]	        Call	|   13 |    2 |    1 |	R13(R14)
+	[ 244]	   GetGlobal	|   13 |    5 |    0 |	R13 = Instance
+	[ 245]	    GetTable	|   13 |   13 |  262 |	R13 = R13["new"]
+	[ 246]	       LoadK	|   14 |   42 |    0 |	R14 = "TextLabel"
+	[ 247]	        Call	|   13 |    2 |    2 |	R13 = R13(R14)
+	[ 248]	   GetGlobal	|   14 |   19 |    0 |	R14 = UDim2
+	[ 249]	    GetTable	|   14 |   14 |  262 |	R14 = R14["new"]
+	[ 250]	       LoadK	|   15 |   20 |    0 |	R15 = 0
+	[ 251]	       LoadK	|   16 |   72 |    0 |	R16 = 200
+	[ 252]	       LoadK	|   17 |   20 |    0 |	R17 = 0
+	[ 253]	       LoadK	|   18 |   73 |    0 |	R18 = 20
+	[ 254]	        Call	|   14 |    5 |    2 |	R14 = R14(R15, R16, R17, R18)
+	[ 255]	    SetTable	|   13 |  279 |   14 |	R13["Size"] = R14
+	[ 256]	   GetGlobal	|   14 |   19 |    0 |	R14 = UDim2
+	[ 257]	    GetTable	|   14 |   14 |  262 |	R14 = R14["new"]
+	[ 258]	       LoadK	|   15 |   30 |    0 |	R15 = 1
+	[ 259]	       LoadK	|   16 |   74 |    0 |	R16 = -210
+	[ 260]	       LoadK	|   17 |   30 |    0 |	R17 = 1
+	[ 261]	       LoadK	|   18 |   75 |    0 |	R18 = -25
+	[ 262]	        Call	|   14 |    5 |    2 |	R14 = R14(R15, R16, R17, R18)
+	[ 263]	    SetTable	|   13 |  284 |   14 |	R13["Position"] = R14
+	[ 264]	    SetTable	|   13 |  285 |  286 |	R13["BackgroundTransparency"] = 1
+	[ 265]	    SetTable	|   13 |  304 |  332 |	R13["Text"] = "by microwaveyd / nico"
+	[ 266]	   GetGlobal	|   14 |   50 |    0 |	R14 = Color3
+	[ 267]	    GetTable	|   14 |   14 |  262 |	R14 = R14["new"]
+	[ 268]	       LoadK	|   15 |   20 |    0 |	R15 = 0
+	[ 269]	       LoadK	|   16 |   20 |    0 |	R16 = 0
+	[ 270]	       LoadK	|   17 |   20 |    0 |	R17 = 0
+	[ 271]	        Call	|   14 |    4 |    2 |	R14 = R14(R15, R16, R17)
+	[ 272]	    SetTable	|   13 |  307 |   14 |	R13["TextColor3"] = R14
+	[ 273]	    SetTable	|   13 |  310 |  268 |	R13["TextScaled"] = false
+	[ 274]	   GetGlobal	|   14 |   13 |    0 |	R14 = Enum
+	[ 275]	    GetTable	|   14 |   14 |  311 |	R14 = R14["Font"]
+	[ 276]	    GetTable	|   14 |   14 |  312 |	R14 = R14["SourceSans"]
+	[ 277]	    SetTable	|   13 |  311 |   14 |	R13["Font"] = R14
+	[ 278]	    SetTable	|   13 |  333 |  334 |	R13["TextSize"] = 13
+	[ 279]	   GetGlobal	|   14 |   13 |    0 |	R14 = Enum
+	[ 280]	    GetTable	|   14 |   14 |  335 |	R14 = R14["TextXAlignment"]
+	[ 281]	    GetTable	|   14 |   14 |  336 |	R14 = R14["Right"]
+	[ 282]	    SetTable	|   13 |  335 |   14 |	R13["TextXAlignment"] = R14
+	[ 283]	   GetGlobal	|   14 |   13 |    0 |	R14 = Enum
+	[ 284]	    GetTable	|   14 |   14 |  337 |	R14 = R14["TextYAlignment"]
+	[ 285]	    GetTable	|   14 |   14 |  338 |	R14 = R14["Bottom"]
+	[ 286]	    SetTable	|   13 |  337 |   14 |	R13["TextYAlignment"] = R14
+	[ 287]	    SetTable	|   13 |  266 |    4 |	R13["Parent"] = R4
+	[ 288]	    GetTable	|   14 |   10 |  339 |	R14 = R10["MouseButton1Click"]
+	[ 289]	        Self	|   14 |   14 |  340 |	R15 = R14; R14 = R14["Connect"]
+	[ 290]	     Closure	|   16 |    0 |    2 |	R16 = func_8f0ef2f6
+	[ 291]	        Move	|    0 |    8 |    0 |	R0 = R8
+	[ 292]	        Move	|    0 |    1 |    0 |	R0 = R1
+	[ 293]	        Call	|   14 |    3 |    1 |	R14(R15, R16)
+	[ 294]	      Return	|    0 |    1 |    0 |	return
+end
+function func_8f0ef2f6()
+	[Slots: 9, Upvalues: 2, Constants: 15]
+	[   0]	    GetUpval	|    0 |    0 |    0 |	R0 = UPVALUE_0
+	[   1]	    GetTable	|    0 |    0 |  256 |	R0 = R0["Text"]
+	[   2]	          Eq	|    0 |    0 |  257 |	if R0 == "" then PC += 1
+	[   3]	         Jmp	|    0 |    4 |    0 |	PC += 4
+	[   4]	   GetGlobal	|    1 |    2 |    0 |	R1 = warn
+	[   5]	       LoadK	|    2 |    3 |    0 |	R2 = "enter player name"
+	[   6]	        Call	|    1 |    2 |    1 |	R1(R2)
+	[   7]	      Return	|    0 |    1 |    0 |	return
+	[   8]	    GetUpval	|    1 |    1 |    0 |	R1 = UPVALUE_1
+	[   9]	        Self	|    1 |    1 |  260 |	R2 = R1; R1 = R1["FindFirstChild"]
+	[  10]	       LoadK	|    3 |    5 |    0 |	R3 = "EditorRig"
+	[  11]	        Call	|    1 |    3 |    2 |	R1 = R1(R2, R3)
+	[  12]	        Test	|    1 |    0 |    1 |	if R1 then PC += 1
+	[  13]	         Jmp	|    0 |    4 |    0 |	PC += 4
+	[  14]	   GetGlobal	|    2 |    2 |    0 |	R2 = warn
+	[  15]	       LoadK	|    3 |    6 |    0 |	R3 = "editorrig not found"
+	[  16]	        Call	|    2 |    2 |    1 |	R2(R3)
+	[  17]	      Return	|    0 |    1 |    0 |	return
+	[  18]	    GetUpval	|    2 |    1 |    0 |	R2 = UPVALUE_1
+	[  19]	        Self	|    2 |    2 |  260 |	R3 = R2; R2 = R2["FindFirstChild"]
+	[  20]	        Move	|    4 |    0 |    0 |	R4 = R0
+	[  21]	        Call	|    2 |    3 |    2 |	R2 = R2(R3, R4)
+	[  22]	        Test	|    2 |    0 |    1 |	if R2 then PC += 1
+	[  23]	         Jmp	|    0 |    4 |    0 |	PC += 4
+	[  24]	   GetGlobal	|    3 |    2 |    0 |	R3 = warn
+	[  25]	       LoadK	|    4 |    7 |    0 |	R4 = "target not found"
+	[  26]	        Call	|    3 |    2 |    1 |	R3(R4)
+	[  27]	      Return	|    0 |    1 |    0 |	return
+	[  28]	   GetGlobal	|    3 |    8 |    0 |	R3 = ipairs
+	[  29]	        Self	|    4 |    1 |  265 |	R5 = R1; R4 = R1["GetChildren"]
+	[  30]	        Call	|    4 |    2 |    0 |	R4->top = R4(R5)
+	[  31]	        Call	|    3 |    0 |    4 |	R3, R4, R5 = R3(R4->top)
+	[  32]	         Jmp	|    0 |    2 |    0 |	PC += 2
+	[  33]	        Self	|    8 |    7 |  266 |	R9 = R7; R8 = R7["Destroy"]
+	[  34]	        Call	|    8 |    2 |    1 |	R8(R9)
+	[  35]	    TForLoop	|    3 |    0 |    2 |	R6, R7 = R3(R4, R5); if R6 ~= nil then R5 = R6 else PC += 1 end
+	[  36]	         Jmp	|    0 |   -4 |    0 |	PC += -4
+	[  37]	   GetGlobal	|    3 |    8 |    0 |	R3 = ipairs
+	[  38]	        Self	|    4 |    2 |  265 |	R5 = R2; R4 = R2["GetChildren"]
+	[  39]	        Call	|    4 |    2 |    0 |	R4->top = R4(R5)
+	[  40]	        Call	|    3 |    0 |    4 |	R3, R4, R5 = R3(R4->top)
+	[  41]	         Jmp	|    0 |    3 |    0 |	PC += 3
+	[  42]	        Self	|    8 |    7 |  267 |	R9 = R7; R8 = R7["Clone"]
+	[  43]	        Call	|    8 |    2 |    2 |	R8 = R8(R9)
+	[  44]	    SetTable	|    8 |  268 |    1 |	R8["Parent"] = R1
+	[  45]	    TForLoop	|    3 |    0 |    2 |	R6, R7 = R3(R4, R5); if R6 ~= nil then R5 = R6 else PC += 1 end
+	[  46]	         Jmp	|    0 |   -5 |    0 |	PC += -5
+	[  47]	   GetGlobal	|    3 |   13 |    0 |	R3 = print
+	[  48]	       LoadK	|    4 |   14 |    0 |	R4 = "EditorRig updated from "
+	[  49]	        Move	|    5 |    0 |    0 |	R5 = R0
+	[  50]	      Concat	|    4 |    4 |    5 |	R4 = R4 .. R5
+	[  51]	        Call	|    3 |    2 |    1 |	R3(R4)
+	[  52]	      Return	|    0 |    1 |    0 |	return
+end
+function func_16c5e0b7(R0)
+	[Slots: 4, Upvalues: 0, Constants: 3]
+	[   0]	    GetTable	|    1 |    0 |  256 |	R1 = R0["MouseEnter"]
+	[   1]	        Self	|    1 |    1 |  257 |	R2 = R1; R1 = R1["Connect"]
+	[   2]	     Closure	|    3 |    0 |    1 |	R3 = func_a968b389
+	[   3]	        Move	|    0 |    0 |    0 |	R0 = R0
+	[   4]	        Call	|    1 |    3 |    1 |	R1(R2, R3)
+	[   5]	    GetTable	|    1 |    0 |  258 |	R1 = R0["MouseLeave"]
+	[   6]	        Self	|    1 |    1 |  257 |	R2 = R1; R1 = R1["Connect"]
+	[   7]	     Closure	|    3 |    1 |    1 |	R3 = func_a968b389
+	[   8]	        Move	|    0 |    0 |    0 |	R0 = R0
+	[   9]	        Call	|    1 |    3 |    1 |	R1(R2, R3)
+	[  10]	      Return	|    0 |    1 |    0 |	return
+end
+function func_a968b389()
+	[Slots: 1, Upvalues: 1, Constants: 2]
+	[   0]	    GetUpval	|    0 |    0 |    0 |	R0 = UPVALUE_0
+	[   1]	    SetTable	|    0 |  256 |  257 |	R0["BackgroundTransparency"] = 0.5
+	[   2]	      Return	|    0 |    1 |    0 |	return
+end
+function func_a968b389()
+	[Slots: 1, Upvalues: 1, Constants: 2]
+	[   0]	    GetUpval	|    0 |    0 |    0 |	R0 = UPVALUE_0
+	[   1]	    SetTable	|    0 |  256 |  257 |	R0["BackgroundTransparency"] = 0.7
+	[   2]	      Return	|    0 |    1 |    0 |	return
+end
